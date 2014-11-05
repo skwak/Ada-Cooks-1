@@ -14,4 +14,5 @@ describe Ingredient do
   it "quinoa is an ingredient in 'quinoa salad' and 'quinoa black bean salad'" do
     expect(@quinoa.recipes).to eq [@quinoa_salad, @quinoa_black_bean_salad]
   end
+  
 end
