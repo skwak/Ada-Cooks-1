@@ -6,9 +6,10 @@ describe Recipe do
     @tomato_sauce = Ingredient.create!(name: "tomato sauce")
     @pizza.ingredients << @tomato_sauce
     @mozzarella = Ingredient.create!(name: "mozzarella")
+    @pizza.ingredients << @mozzarella
   end
 
   it "should have one or more ingredients" do
-    expect(@pizza.ingredients).to eq @pizza.ingredients
+    expect(@pizza.ingredients.count).to eq 2
   end
 end
