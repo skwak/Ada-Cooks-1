@@ -1,0 +1,9 @@
+<h2>Add New Recipe</h2>
+
+<%= bootstrap_form_for(@recipe, layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-8") do |f| %>
+  <%= f.text_field :title, label: "Recipe Name" %>
+  <%= f.text_area :description, label: "Description" %>
+  <%= f.text_field :yield, label: "Servings" %>
+  <%= f.text_field :time, label: "Time" %>
+  <%= f.text_area :directions, label: "Directions" %>
+<% end %>
