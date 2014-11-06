@@ -7,6 +7,7 @@ describe Recipe do
     @pizza.ingredients << @tomato_sauce
     @mozzarella = Ingredient.create!(name: "mozzarella")
     @pizza.ingredients << @mozzarella
+
   end
 
   it "has a count of 2 when counting the number of ingredients in 'Cowabunga Pizza'" do
