@@ -1,4 +1,5 @@
 class RecipesController < ApplicationController
+
   def index
     @recipes = Recipe.all
   end
@@ -10,7 +11,8 @@ class RecipesController < ApplicationController
   def create
     @recipe_form = RecipeForm.new(params[:recipe_form])
     if @recipe_form.submit
-      redirect_to recipe_path(@recipe)
+      redirect_to recipe_path(@recipe_form.recipe)
     end
   end
+  
 end
