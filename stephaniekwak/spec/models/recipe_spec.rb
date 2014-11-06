@@ -9,11 +9,11 @@ describe Recipe do
     @pizza.ingredients << @mozzarella
   end
 
-  describe "when a recipe has one or more ingredients" do
+  it "has a count of 2 when counting the number of ingredients in 'Cowabunga Pizza'" do
     expect(@pizza.ingredients.count).to eq 2
   end
 
-  it "when a pizza recipe has ingredients of 'tomato sauce' and 'mozzarella'" do
+  it "has ingredients of 'tomato sauce' and 'mozzarella' when the recipe is for 'Cowabunga Pizza'" do
     expect(@pizza.ingredients).to eq [@tomato_sauce, @mozzarella]
   end
 
