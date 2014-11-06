@@ -5,7 +5,8 @@ class RecipesController < ApplicationController
   end
 
   def new
-    @recipe = Recipe.new
+  
+    @ingredients = Ingredient.all
   end
 
   def create
@@ -14,5 +15,14 @@ class RecipesController < ApplicationController
       redirect_to recipe_path(@recipe_form.recipe)
     end
   end
-  
+
+  def show
+    find_recipe
+  end
+
+  private
+
+  def find_recipe
+    @recipe = Recipe.find(params[:id])
+  end
 end

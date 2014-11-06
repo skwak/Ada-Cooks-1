@@ -12,7 +12,7 @@ class RecipeForm
     # create an instance of Recipe class
     # create recipe ingredients for each id in the ingredients key
     @recipe = Recipe.create(
-      name: @attributes[:title],
+      title: @attributes[:title],
       description: @attributes[:description],
       yield: @attributes[:yield],
       time: @attributes[:time],
