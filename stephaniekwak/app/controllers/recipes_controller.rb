@@ -5,7 +5,7 @@ class RecipesController < ApplicationController
   end
 
   def new
-  
+
     @ingredients = Ingredient.all
   end
 
