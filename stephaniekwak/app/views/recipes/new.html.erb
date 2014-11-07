@@ -15,8 +15,8 @@
   <% @ingredients.each do |ingredient| %>
     <li><%= check_box_tag "recipe_form[ingredients][]", ingredient.id %>
     <%= label_tag "recipe_form[ingredients][]", ingredient.name %><br>
-    <%= label_tag "Measurement (ex: 1 cup, chopped)" %><br>
-    <%= text_field_tag "recipe_form[ingredients][measurements]" %></li>
+    <!-- <%= label_tag "Measurement (ex: 1 cup, chopped)" %><br>
+    <%= text_field_tag "recipe_form[ingredients][recipe_ingredients][measurement]" %></li> -->
     <hr>
   <% end %>
   </ul>
