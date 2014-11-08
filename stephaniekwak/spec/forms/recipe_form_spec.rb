@@ -2,13 +2,11 @@ require "rails_helper"
 
 describe RecipeForm do
   before(:each) do
-    @recipe_form = RecipeForm.new(title: "Hot Dog")
+    @attributes = { title: "Hot Dog", description: "crazy bratwurst", yield: "1 hotdog", time: "1 minute", directions: "buy hotdog", ingredients: [11, 22] }
+    @recipe_form = RecipeForm.new(attributes)
   end
 
-  it "should have attributes" do
-    expect(@recipe_form.title).to eq "Hot Dog"
-  end
-
+  
 end
 
 # def initialize(attributes)
