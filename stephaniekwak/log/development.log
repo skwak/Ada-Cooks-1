@@ -3019,6 +3019,436 @@ Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 15:08:21 
 Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 15:08:21 -0800
 
 
+<<<<<<< HEAD
+Started GET "/" for 127.0.0.1 at 2014-11-06 15:09:14 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 77ms (Views: 76.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-06 15:09:14 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 15:09:14 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 15:09:14 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 15:09:14 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 15:09:14 -0800
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2014-11-06 15:09:15 -0800
+Processing by RecipesController#new as HTML
+  [1m[36mIngredient Load (0.3ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"[0m
+  Rendered recipes/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 33ms (Views: 28.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-06 15:09:16 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 15:09:16 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 15:09:16 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 15:09:16 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 15:09:16 -0800
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2014-11-06 15:11:58 -0800
+Processing by RecipesController#new as HTML
+  [1m[35mIngredient Load (0.4ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  Rendered recipes/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 31ms (Views: 30.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-06 15:11:58 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 15:11:58 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 15:11:58 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 15:11:58 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 15:11:58 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 15:12:00 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 30ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 15:12:00 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-06 15:12:00 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 15:12:00 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 15:12:00 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 15:12:00 -0800
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2014-11-06 15:12:01 -0800
+Processing by RecipesController#new as HTML
+  [1m[36mIngredient Load (0.2ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"[0m
+  Rendered recipes/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-06 15:12:01 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 15:12:01 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 15:12:01 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 15:12:01 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 15:12:01 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 15:21:43 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 76ms (Views: 75.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 15:21:43 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 15:21:43 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 15:21:43 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 15:21:43 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-06 15:21:43 -0800
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2014-11-06 15:21:44 -0800
+Processing by RecipesController#new as HTML
+  [1m[35mIngredient Load (0.7ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  Rendered recipes/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 62ms (Views: 56.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-06 15:21:44 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 15:21:44 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 15:21:44 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 15:21:44 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 15:21:44 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 15:32:56 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 66ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-06 15:32:56 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 15:32:56 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 15:32:56 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 15:32:56 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 15:32:56 -0800
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2014-11-06 15:32:57 -0800
+Processing by RecipesController#new as HTML
+  [1m[35mIngredient Load (0.5ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  Rendered recipes/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 45ms (Views: 37.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 15:32:57 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 15:32:57 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-06 15:32:57 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 15:32:57 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 15:32:57 -0800
+
+
+Started POST "/recipes" for 127.0.0.1 at 2014-11-06 15:33:18 -0800
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iQMNy0UQW4FZGUFWuXGm5l/uHOmxIrsrVtPgiZGBlEU=", "recipe_form"=>{"title"=>"delicious cake", "description"=>"blahalwkererlwerew", "yield"=>"1 cake for 10 people", "ingredients"=>["1", "4"], "time"=>"2 hours", "directions"=>"30 "}, "commit"=>"Save changes"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-06 23:33:18.849878"], ["description", "blahalwkererlwerew"], ["directions", "30 "], ["time", "2 hours"], ["title", "delicious cake"], ["updated_at", "2014-11-06 23:33:18.849878"], ["yield", "1 cake for 10 people"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-11-06 23:33:18.875071"], ["ingredient_id", 1], ["recipe_id", 12], ["updated_at", "2014-11-06 23:33:18.875071"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-06 23:33:18.878303"], ["ingredient_id", 4], ["recipe_id", 12], ["updated_at", "2014-11-06 23:33:18.878303"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/12
+Completed 302 Found in 52ms (ActiveRecord: 15.7ms)
+
+
+Started GET "/recipes/12" for 127.0.0.1 at 2014-11-06 15:33:18 -0800
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mRecipe Load (0.3ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 12]]
+  [1m[36mIngredient Load (0.8ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 12]]
+  Rendered recipes/show.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 53ms (Views: 50.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-06 15:33:19 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 15:33:19 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 15:33:19 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 15:33:19 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 15:33:19 -0800
+
+
+Started GET "/recipes/12" for 127.0.0.1 at 2014-11-06 15:33:50 -0800
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mRecipe Load (0.3ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 12]]
+  [1m[36mIngredient Load (0.5ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 12]]
+  [1m[35mRecipeIngredient Load (0.2ms)[0m  SELECT "recipe_ingredients".* FROM "recipe_ingredients"  WHERE "recipe_ingredients"."ingredient_id" = $1  [["ingredient_id", 1]]
+  Rendered recipes/show.html.erb within layouts/application (21.5ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (undefined method `measurement' for #<RecipeIngredient::ActiveRecord_Associations_CollectionProxy:0x007fa7212ec488>):
+    2: 
+    3: <ul>
+    4: <% @recipe.ingredients.each do |ingredient| %>
+    5:   <li><%= ingredient.recipe_ingredients.measurement %><%= ingredient.name %></li>
+    6: <% end %>
+    7: 
+    8: 
+  app/views/recipes/show.html.erb:5:in `block in _app_views_recipes_show_html_erb___4093194195247511193_70177896672980'
+  app/views/recipes/show.html.erb:4:in `_app_views_recipes_show_html_erb___4093194195247511193_70177896672980'
+
+
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.8ms)
+
+
+Started GET "/recipes/12" for 127.0.0.1 at 2014-11-06 15:34:07 -0800
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 12]]
+  [1m[35mIngredient Load (0.4ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 12]]
+  Rendered recipes/show.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `measurement' for #<Ingredient:0x007fa7220115c8>):
+    2: 
+    3: <ul>
+    4: <% @recipe.ingredients.each do |ingredient| %>
+    5:   <li><%= ingredient.measurement %><%= ingredient.name %></li>
+    6: <% end %>
+    7: 
+    8: 
+  app/views/recipes/show.html.erb:5:in `block in _app_views_recipes_show_html_erb___4093194195247511193_70177903452300'
+  app/views/recipes/show.html.erb:4:in `_app_views_recipes_show_html_erb___4093194195247511193_70177903452300'
+
+
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.9ms)
+
+
+Started GET "/recipes/12" for 127.0.0.1 at 2014-11-06 15:34:15 -0800
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 12]]
+  [1m[35mIngredient Load (0.4ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 12]]
+  Rendered recipes/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 35ms (Views: 33.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 15:34:15 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 15:34:15 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 15:34:15 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-06 15:34:15 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 15:34:15 -0800
+  [1m[36mRecipeIngredient Load (0.5ms)[0m  [1mSELECT "recipe_ingredients".* FROM "recipe_ingredients"[0m
+  [1m[35mRecipeIngredient Load (0.3ms)[0m  SELECT  "recipe_ingredients".* FROM "recipe_ingredients"  WHERE "recipe_ingredients"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mRecipeIngredient Load (1.0ms)[0m  [1mSELECT  "recipe_ingredients".* FROM "recipe_ingredients"  WHERE "recipe_ingredients"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "recipe_ingredients" SET "measurement" = $1, "updated_at" = $2 WHERE "recipe_ingredients"."id" = 1[0m  [["measurement", "wooh"], ["updated_at", "2014-11-06 23:39:49.034541"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mRecipeIngredient Load (0.4ms)[0m  [1mSELECT "recipe_ingredients".* FROM "recipe_ingredients"[0m
+
+
+Started GET "/recipes/12" for 127.0.0.1 at 2014-11-06 15:46:53 -0800
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 12]]
+  [1m[35mIngredient Load (0.3ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 12]]
+  Rendered recipes/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 39ms (Views: 33.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-06 15:46:53 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 15:46:53 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 15:46:53 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 15:46:53 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 15:46:53 -0800
+
+
+Started GET "/recipes/12" for 127.0.0.1 at 2014-11-06 15:47:00 -0800
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 12]]
+  [1m[35mIngredient Load (0.3ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 12]]
+  Rendered recipes/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-06 15:47:00 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 15:47:00 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 15:47:00 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 15:47:00 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 15:47:00 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 15:50:17 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-06 15:50:17 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 15:50:17 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 15:50:17 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 15:50:17 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 15:50:17 -0800
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2014-11-06 15:50:18 -0800
+Processing by RecipesController#new as HTML
+  [1m[36mIngredient Load (0.4ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"[0m
+  Rendered recipes/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 43ms (Views: 38.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-06 15:50:18 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 15:50:18 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 15:50:18 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 15:50:18 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 15:50:18 -0800
+
+
+Started POST "/recipes" for 127.0.0.1 at 2014-11-06 15:50:56 -0800
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iQMNy0UQW4FZGUFWuXGm5l/uHOmxIrsrVtPgiZGBlEU=", "recipe_form"=>{"title"=>"carrot cheese pizza", "description"=>"k;aflewkfjaew;l", "yield"=>"1", "ingredients"=>["1", "4"], "recipe_ingredients"=>{"measurement"=>"20 cups"}, "time"=>"1.5 hours", "directions"=>"lakwerarar"}, "commit"=>"Save changes"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["created_at", "2014-11-06 23:50:56.769788"], ["description", "k;aflewkfjaew;l"], ["directions", "lakwerarar"], ["time", "1.5 hours"], ["title", "carrot cheese pizza"], ["updated_at", "2014-11-06 23:50:56.769788"], ["yield", "1"]]
+  [1m[35m (6.4ms)[0m  COMMIT
+Completed 500 Internal Server Error in 24ms
+
+NameError (undefined local variable or method `measurement' for #<RecipeForm:0x007fa7224bf6d8>):
+  app/forms/recipe_form.rb:23:in `block in submit'
+  app/forms/recipe_form.rb:22:in `each'
+  app/forms/recipe_form.rb:22:in `submit'
+  app/controllers/recipes_controller.rb:14:in `create'
+
+
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.8ms)
+=======
 Started GET "/" for 127.0.0.1 at 2014-11-06 19:57:27 -0800
 
 PG::ConnectionBad (could not connect to server: No such file or directory
@@ -5145,6 +5575,468 @@ Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 21:48:16 -080
 
 
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 21:48:16 -0800
+>>>>>>> 593fe56062f7f584fa66454bd1b5af8a0f4287ce
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-07 14:42:52 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (6.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mRecipe Load (0.7ms)[0m  SELECT "recipes".* FROM "recipes"
+  [1m[36mIngredient Load (3.1ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 1]]
+  [1m[35mIngredient Load (0.5ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 2]]
+  [1m[36mIngredient Load (0.5ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 3]]
+  [1m[35mIngredient Load (0.3ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 4]]
+  [1m[36mIngredient Load (0.4ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 5]]
+  [1m[35mIngredient Load (0.5ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 6]]
+  [1m[36mIngredient Load (0.2ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 7]]
+  [1m[35mIngredient Load (0.2ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 8]]
+  [1m[36mIngredient Load (0.7ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 9]]
+  [1m[35mIngredient Load (0.3ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 10]]
+  [1m[36mIngredient Load (2.4ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 11]]
+  [1m[35mIngredient Load (0.4ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 12]]
+  [1m[36mIngredient Load (0.6ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 13]]
+  Rendered home/index.html.erb within layouts/application (114.6ms)
+Completed 200 OK in 1178ms (Views: 1152.1ms | ActiveRecord: 17.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-07 14:42:54 -0800
+Processing by HomeController#index as HTML
+  [1m[35mRecipe Load (0.3ms)[0m  SELECT "recipes".* FROM "recipes"
+  [1m[36mIngredient Load (0.1ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 1]]
+  [1m[35mIngredient Load (0.1ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 2]]
+  [1m[36mIngredient Load (0.3ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 3]]
+  [1m[35mIngredient Load (0.1ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 4]]
+  [1m[36mIngredient Load (0.1ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 5]]
+  [1m[35mIngredient Load (0.1ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 6]]
+  [1m[36mIngredient Load (0.1ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 7]]
+  [1m[35mIngredient Load (0.1ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 8]]
+  [1m[36mIngredient Load (0.1ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 9]]
+  [1m[35mIngredient Load (0.1ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 10]]
+  [1m[36mIngredient Load (0.1ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 11]]
+  [1m[35mIngredient Load (0.1ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 12]]
+  [1m[36mIngredient Load (0.1ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 13]]
+  Rendered home/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-07 14:42:54 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-07 14:42:54 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-07 14:42:54 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-07 14:42:54 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-07 14:42:54 -0800
+
+
+Started GET "/recipes/1" for 127.0.0.1 at 2014-11-07 14:43:05 -0800
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mIngredient Load (0.2ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 1]]
+  Rendered recipes/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-07 14:43:05 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-07 14:43:05 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-07 14:43:05 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-07 14:43:05 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-07 14:43:05 -0800
+
+
+Started GET "/recipes/3" for 127.0.0.1 at 2014-11-07 14:43:08 -0800
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mRecipe Load (0.3ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mIngredient Load (0.3ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 3]]
+  Rendered recipes/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 46ms (Views: 44.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-07 14:43:09 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-07 14:43:09 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-07 14:43:09 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-07 14:43:09 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-07 14:43:09 -0800
+
+
+Started GET "/recipes/4" for 127.0.0.1 at 2014-11-07 14:43:12 -0800
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mIngredient Load (0.2ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 4]]
+  Rendered recipes/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-07 14:43:12 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-07 14:43:12 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-07 14:43:12 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-07 14:43:12 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-07 14:43:12 -0800
+
+
+Started GET "/ingredients/3" for 127.0.0.1 at 2014-11-07 14:44:08 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IngredientsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mIngredient Load (0.3ms)[0m  SELECT  "ingredients".* FROM "ingredients"  WHERE "ingredients"."id" = $1 LIMIT 1  [["id", 3]]
+Completed 404 Not Found in 8ms
+
+ActiveRecord::RecordNotFound (Couldn't find Ingredient with 'id'=3):
+  app/controllers/ingredients_controller.rb:31:in `find_ingredient'
+  app/controllers/ingredients_controller.rb:21:in `show'
+
+
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.9ms)
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.5ms)
+
+
+Started GET "/ingredients/2" for 127.0.0.1 at 2014-11-07 14:44:10 -0800
+Processing by IngredientsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mIngredient Load (0.3ms)[0m  [1mSELECT  "ingredients".* FROM "ingredients"  WHERE "ingredients"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Ingredient with 'id'=2):
+  app/controllers/ingredients_controller.rb:31:in `find_ingredient'
+  app/controllers/ingredients_controller.rb:21:in `show'
+
+
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.7ms)
+
+
+Started GET "/ingredients/1" for 127.0.0.1 at 2014-11-07 14:44:12 -0800
+Processing by IngredientsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mIngredient Load (0.4ms)[0m  SELECT  "ingredients".* FROM "ingredients"  WHERE "ingredients"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ingredients/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 71ms (Views: 67.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-07 14:44:12 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-07 14:44:12 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-07 14:44:12 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-07 14:44:12 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-07 14:44:12 -0800
+
+
+Started GET "/ingredients/1/delete" for 127.0.0.1 at 2014-11-07 14:44:15 -0800
+
+AbstractController::ActionNotFound (The action 'destroy' could not be found for IngredientsController):
+  actionpack (4.1.5) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stephaniekwak/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stephaniekwak/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stephaniekwak/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+
+
+Started GET "/ingredients/1/delete" for 127.0.0.1 at 2014-11-07 14:44:37 -0800
+Processing by IngredientsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIngredient Load (0.2ms)[0m  [1mSELECT  "ingredients".* FROM "ingredients"  WHERE "ingredients"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (8.5ms)[0m  DELETE FROM "ingredients" WHERE "ingredients"."id" = 1
+Completed 500 Internal Server Error in 18ms
+
+ActionView::MissingTemplate (Missing template ingredients/destroy, application/destroy with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/stephaniekwak/ada/Ada-Cooks-1/stephaniekwak/app/views"
+):
+  actionview (4.1.5) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.5) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.5) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.5) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.5) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.5) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.5) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.5) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/stephaniekwak/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stephaniekwak/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stephaniekwak/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stephaniekwak/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/ingredients/1/delete" for 127.0.0.1 at 2014-11-07 14:44:59 -0800
+Processing by IngredientsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIngredient Load (0.2ms)[0m  [1mSELECT  "ingredients".* FROM "ingredients"  WHERE "ingredients"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 404 Not Found in 5ms
+
+ActiveRecord::RecordNotFound (Couldn't find Ingredient with 'id'=1):
+  app/controllers/ingredients_controller.rb:37:in `find_ingredient'
+  app/controllers/ingredients_controller.rb:25:in `destroy'
+
+
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/stephaniekwak/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.9ms)
+  [1m[36mIngredient Load (0.4ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"[0m
+
+
+Started GET "/ingredients/4" for 127.0.0.1 at 2014-11-07 14:45:27 -0800
+Processing by IngredientsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mIngredient Load (0.2ms)[0m  SELECT  "ingredients".* FROM "ingredients"  WHERE "ingredients"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered ingredients/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 36ms (Views: 33.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-07 14:45:27 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-07 14:45:27 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-07 14:45:27 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-07 14:45:27 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-07 14:45:27 -0800
+
+
+Started GET "/ingredients/4/delete" for 127.0.0.1 at 2014-11-07 14:45:30 -0800
+Processing by IngredientsController#destroy as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mIngredient Load (0.2ms)[0m  [1mSELECT  "ingredients".* FROM "ingredients"  WHERE "ingredients"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mSQL (6.3ms)[0m  DELETE FROM "ingredients" WHERE "ingredients"."id" = 4
+Redirected to http://localhost:3000/ingredients
+Completed 302 Found in 9ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/ingredients" for 127.0.0.1 at 2014-11-07 14:45:30 -0800
+Processing by IngredientsController#index as HTML
+  Rendered ingredients/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 28ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-07 14:45:31 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-07 14:45:31 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-07 14:45:31 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-07 14:45:31 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-07 14:45:31 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-07 14:45:31 -0800
+Processing by HomeController#index as HTML
+  [1m[36mRecipe Load (0.4ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+  [1m[35mIngredient Load (0.4ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 1]]
+  [1m[36mIngredient Load (0.2ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 2]]
+  [1m[35mIngredient Load (0.2ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 3]]
+  [1m[36mIngredient Load (0.2ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 4]]
+  [1m[35mIngredient Load (0.2ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 5]]
+  [1m[36mIngredient Load (0.2ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 6]]
+  [1m[35mIngredient Load (0.1ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 7]]
+  [1m[36mIngredient Load (0.1ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 8]]
+  [1m[35mIngredient Load (0.1ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 9]]
+  [1m[36mIngredient Load (0.1ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 10]]
+  [1m[35mIngredient Load (0.1ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 11]]
+  [1m[36mIngredient Load (0.1ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 12]]
+  [1m[35mIngredient Load (0.1ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 13]]
+  Rendered home/index.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 72ms (Views: 64.1ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-07 14:45:32 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-07 14:45:32 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-07 14:45:32 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-07 14:45:32 -0800
+
+
+<<<<<<< HEAD
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 21:48:16 -0800
 
 
 Started GET "/" for 127.0.0.1 at 2014-11-06 21:49:28 -0800
@@ -5189,3 +6081,6 @@ Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 21:49:29 -080
 
 
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 21:49:29 -0800
+=======
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-07 14:45:32 -0800
+>>>>>>> 06d154959032c48069fb038b13a660f1957a5b0b

@@ -21,6 +21,12 @@ class IngredientsController < ApplicationController
     find_ingredient
   end
 
+  def destroy
+    if find_ingredient.delete
+      redirect_to ingredients_path
+    end
+  end
+
   private
 
   def ingredient_params

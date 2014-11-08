@@ -2,21 +2,22 @@ Rails.application.routes.draw do
 
   root "home#index",                                               as: :home
 
-  get "/recipes",                 to: "recipes#index",             as: :recipes
-  post "/recipes",                to: "recipes#create"
-  get "/recipes/new",             to: "recipes#new",               as: :new_recipe
-  get "/recipes/:id",             to: "recipes#show",              as: :recipe
-  get "/recipes/:id/edit",        to: "recipes#edit",              as: :edit_recipe
-  patch "/recipes/:id",           to: "recipes#update",            as: :update_recipe
-  get "/recipes/:id/delete",      to: "recipes#destroy",              as: :delete_recipe
-  delete "/recipes/:id/delete",   to: "recipes#destroy"
+  get "/recipes",                    to: "recipes#index",             as: :recipes
+  post "/recipes",                   to: "recipes#create"
+  get "/recipes/new",                to: "recipes#new",               as: :new_recipe
+  get "/recipes/:id",                to: "recipes#show",              as: :recipe
+  get "/recipes/:id/edit",           to: "recipes#edit",              as: :edit_recipe
+  patch "/recipes/:id",              to: "recipes#update",            as: :update_recipe
+  get "/recipes/:id/delete",         to: "recipes#destroy",           as: :delete_recipe
+  delete "/recipes/:id/delete",      to: "recipes#destroy"
 
 
-  get "/ingredients",     to: "ingredients#index",  as: :ingredients
-  post "/ingredients",    to: "ingredients#create"
-  get "/ingredients/new", to: "ingredients#new",    as: :new_ingredient
-  get "/ingredients/:id", to: "ingredients#show",   as: :ingredient
-
+  get "/ingredients",                to: "ingredients#index",         as: :ingredients
+  post "/ingredients",               to: "ingredients#create"
+  get "/ingredients/new",            to: "ingredients#new",           as: :new_ingredient
+  get "/ingredients/:id",            to: "ingredients#show",          as: :ingredient
+  get "/ingredients/:id/delete",     to: "ingredients#destroy",       as: :delete_ingredient
+  delete "/ingredients/:id/delete",  to: "ingredients#destroy"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

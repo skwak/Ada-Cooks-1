@@ -20,7 +20,7 @@ class RecipeForm
     )
 
     @attributes[:ingredients].each do |id|
-      RecipeIngredient.create(ingredient_id: id, recipe_id: @recipe.id)
+      RecipeIngredient.create(ingredient_id: id, recipe_id: @recipe.id, measurement: measurement)
     end
   end
 

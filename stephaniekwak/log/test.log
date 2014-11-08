@@ -1535,3 +1535,723 @@ Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
   [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
   [1m[35mIngredient Load (0.2ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 34]]
   [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by RecipesController#new as HTML
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 1.3ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:00:31.313811"], ["description", "Healthy quinoa salad for a hippie, fool."], ["directions", "make some quinoa and add some vegetables"], ["time", "45 minutes"], ["title", "Quinoa Salad"], ["updated_at", "2014-11-07 23:00:31.313811"], ["yield", "2 servings"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:00:31.321119"], ["name", "Quinoa"], ["updated_at", "2014-11-07 23:00:31.321119"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:00:31.342718"], ["ingredient_id", 49], ["recipe_id", 35], ["updated_at", "2014-11-07 23:00:31.342718"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:00:31.344627"], ["name", "Kale"], ["updated_at", "2014-11-07 23:00:31.344627"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:00:31.347112"], ["ingredient_id", 50], ["recipe_id", 35], ["updated_at", "2014-11-07 23:00:31.347112"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["created_at", "2014-11-07 23:00:31.349525"], ["description", "Huh"], ["directions", "make quinoa and add some black beans"], ["time", "30 minutes"], ["title", "Quinoa & Black Bean Salad"], ["updated_at", "2014-11-07 23:00:31.349525"], ["yield", "2 servings"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:00:31.351974"], ["ingredient_id", 49], ["recipe_id", 36], ["updated_at", "2014-11-07 23:00:31.351974"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mRecipe Load (0.5ms)[0m  SELECT "recipes".* FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipes"."id" = "recipe_ingredients"."recipe_id" WHERE "recipe_ingredients"."ingredient_id" = $1  [["ingredient_id", 49]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:00:31.362150"], ["description", "TMNT pizza"], ["directions", "place pizza in oven and cook"], ["time", "1.5 hours"], ["title", "Cowabunga Pizza"], ["updated_at", "2014-11-07 23:00:31.362150"], ["yield", "1 pizza"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:00:31.363426"], ["name", "tomato sauce"], ["updated_at", "2014-11-07 23:00:31.363426"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:00:31.365255"], ["ingredient_id", 51], ["recipe_id", 37], ["updated_at", "2014-11-07 23:00:31.365255"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:00:31.366346"], ["name", "mozzarella"], ["updated_at", "2014-11-07 23:00:31.366346"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:00:31.367893"], ["ingredient_id", 52], ["recipe_id", 37], ["updated_at", "2014-11-07 23:00:31.367893"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 37]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:00:31.371164"], ["description", "TMNT pizza"], ["directions", "place pizza in oven and cook"], ["time", "1.5 hours"], ["title", "Cowabunga Pizza"], ["updated_at", "2014-11-07 23:00:31.371164"], ["yield", "1 pizza"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:00:31.372386"], ["name", "tomato sauce"], ["updated_at", "2014-11-07 23:00:31.372386"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:00:31.374113"], ["ingredient_id", 53], ["recipe_id", 38], ["updated_at", "2014-11-07 23:00:31.374113"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:00:31.375219"], ["name", "mozzarella"], ["updated_at", "2014-11-07 23:00:31.375219"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:00:31.376617"], ["ingredient_id", 54], ["recipe_id", 38], ["updated_at", "2014-11-07 23:00:31.376617"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mIngredient Load (0.2ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 38]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by RecipesController#new as HTML
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 1.5ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:00:46.320524"], ["description", "Healthy quinoa salad for a hippie, fool."], ["directions", "make some quinoa and add some vegetables"], ["time", "45 minutes"], ["title", "Quinoa Salad"], ["updated_at", "2014-11-07 23:00:46.320524"], ["yield", "2 servings"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:00:46.327452"], ["name", "Quinoa"], ["updated_at", "2014-11-07 23:00:46.327452"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:00:46.347726"], ["ingredient_id", 55], ["recipe_id", 39], ["updated_at", "2014-11-07 23:00:46.347726"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:00:46.349693"], ["name", "Kale"], ["updated_at", "2014-11-07 23:00:46.349693"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:00:46.352098"], ["ingredient_id", 56], ["recipe_id", 39], ["updated_at", "2014-11-07 23:00:46.352098"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["created_at", "2014-11-07 23:00:46.354418"], ["description", "Huh"], ["directions", "make quinoa and add some black beans"], ["time", "30 minutes"], ["title", "Quinoa & Black Bean Salad"], ["updated_at", "2014-11-07 23:00:46.354418"], ["yield", "2 servings"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:00:46.358761"], ["ingredient_id", 55], ["recipe_id", 40], ["updated_at", "2014-11-07 23:00:46.358761"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mRecipe Load (0.6ms)[0m  SELECT "recipes".* FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipes"."id" = "recipe_ingredients"."recipe_id" WHERE "recipe_ingredients"."ingredient_id" = $1  [["ingredient_id", 55]]
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:00:46.370250"], ["description", "TMNT pizza"], ["directions", "place pizza in oven and cook"], ["time", "1.5 hours"], ["title", "Cowabunga Pizza"], ["updated_at", "2014-11-07 23:00:46.370250"], ["yield", "1 pizza"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:00:46.372319"], ["name", "tomato sauce"], ["updated_at", "2014-11-07 23:00:46.372319"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:00:46.375047"], ["ingredient_id", 57], ["recipe_id", 41], ["updated_at", "2014-11-07 23:00:46.375047"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:00:46.376694"], ["name", "mozzarella"], ["updated_at", "2014-11-07 23:00:46.376694"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:00:46.378890"], ["ingredient_id", 58], ["recipe_id", 41], ["updated_at", "2014-11-07 23:00:46.378890"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 41]]
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:00:46.383994"], ["description", "TMNT pizza"], ["directions", "place pizza in oven and cook"], ["time", "1.5 hours"], ["title", "Cowabunga Pizza"], ["updated_at", "2014-11-07 23:00:46.383994"], ["yield", "1 pizza"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:00:46.385475"], ["name", "tomato sauce"], ["updated_at", "2014-11-07 23:00:46.385475"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:00:46.387689"], ["ingredient_id", 59], ["recipe_id", 42], ["updated_at", "2014-11-07 23:00:46.387689"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:00:46.388851"], ["name", "mozzarella"], ["updated_at", "2014-11-07 23:00:46.388851"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:00:46.390246"], ["ingredient_id", 60], ["recipe_id", 42], ["updated_at", "2014-11-07 23:00:46.390246"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mIngredient Load (0.2ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 42]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by RecipesController#new as HTML
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 1.4ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:04:09.940462"], ["description", "Healthy quinoa salad for a hippie, fool."], ["directions", "make some quinoa and add some vegetables"], ["time", "45 minutes"], ["title", "Quinoa Salad"], ["updated_at", "2014-11-07 23:04:09.940462"], ["yield", "2 servings"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:04:09.947610"], ["name", "Quinoa"], ["updated_at", "2014-11-07 23:04:09.947610"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:04:09.972765"], ["ingredient_id", 61], ["recipe_id", 43], ["updated_at", "2014-11-07 23:04:09.972765"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:04:09.975084"], ["name", "Kale"], ["updated_at", "2014-11-07 23:04:09.975084"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:04:09.977014"], ["ingredient_id", 62], ["recipe_id", 43], ["updated_at", "2014-11-07 23:04:09.977014"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["created_at", "2014-11-07 23:04:09.978346"], ["description", "Huh"], ["directions", "make quinoa and add some black beans"], ["time", "30 minutes"], ["title", "Quinoa & Black Bean Salad"], ["updated_at", "2014-11-07 23:04:09.978346"], ["yield", "2 servings"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:04:09.981861"], ["ingredient_id", 61], ["recipe_id", 44], ["updated_at", "2014-11-07 23:04:09.981861"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mRecipe Load (0.4ms)[0m  SELECT "recipes".* FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipes"."id" = "recipe_ingredients"."recipe_id" WHERE "recipe_ingredients"."ingredient_id" = $1  [["ingredient_id", 61]]
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:04:09.991589"], ["description", "TMNT pizza"], ["directions", "place pizza in oven and cook"], ["time", "1.5 hours"], ["title", "Cowabunga Pizza"], ["updated_at", "2014-11-07 23:04:09.991589"], ["yield", "1 pizza"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:04:09.993131"], ["name", "tomato sauce"], ["updated_at", "2014-11-07 23:04:09.993131"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:04:09.995284"], ["ingredient_id", 63], ["recipe_id", 45], ["updated_at", "2014-11-07 23:04:09.995284"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:04:09.996867"], ["name", "mozzarella"], ["updated_at", "2014-11-07 23:04:09.996867"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:04:09.998646"], ["ingredient_id", 64], ["recipe_id", 45], ["updated_at", "2014-11-07 23:04:09.998646"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 45]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:04:10.002060"], ["description", "TMNT pizza"], ["directions", "place pizza in oven and cook"], ["time", "1.5 hours"], ["title", "Cowabunga Pizza"], ["updated_at", "2014-11-07 23:04:10.002060"], ["yield", "1 pizza"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:04:10.003505"], ["name", "tomato sauce"], ["updated_at", "2014-11-07 23:04:10.003505"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:04:10.006061"], ["ingredient_id", 65], ["recipe_id", 46], ["updated_at", "2014-11-07 23:04:10.006061"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:04:10.007496"], ["name", "mozzarella"], ["updated_at", "2014-11-07 23:04:10.007496"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:04:10.009070"], ["ingredient_id", 66], ["recipe_id", 46], ["updated_at", "2014-11-07 23:04:10.009070"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mIngredient Load (0.2ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 46]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by RecipesController#new as HTML
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 1.5ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:04:38.832235"], ["description", "Healthy quinoa salad for a hippie, fool."], ["directions", "make some quinoa and add some vegetables"], ["time", "45 minutes"], ["title", "Quinoa Salad"], ["updated_at", "2014-11-07 23:04:38.832235"], ["yield", "2 servings"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:04:38.839734"], ["name", "Quinoa"], ["updated_at", "2014-11-07 23:04:38.839734"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:04:38.862310"], ["ingredient_id", 67], ["recipe_id", 47], ["updated_at", "2014-11-07 23:04:38.862310"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:04:38.864746"], ["name", "Kale"], ["updated_at", "2014-11-07 23:04:38.864746"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:04:38.867921"], ["ingredient_id", 68], ["recipe_id", 47], ["updated_at", "2014-11-07 23:04:38.867921"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["created_at", "2014-11-07 23:04:38.869921"], ["description", "Huh"], ["directions", "make quinoa and add some black beans"], ["time", "30 minutes"], ["title", "Quinoa & Black Bean Salad"], ["updated_at", "2014-11-07 23:04:38.869921"], ["yield", "2 servings"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:04:38.872239"], ["ingredient_id", 67], ["recipe_id", 48], ["updated_at", "2014-11-07 23:04:38.872239"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mRecipe Load (0.4ms)[0m  SELECT "recipes".* FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipes"."id" = "recipe_ingredients"."recipe_id" WHERE "recipe_ingredients"."ingredient_id" = $1  [["ingredient_id", 67]]
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:04:38.881737"], ["description", "TMNT pizza"], ["directions", "place pizza in oven and cook"], ["time", "1.5 hours"], ["title", "Cowabunga Pizza"], ["updated_at", "2014-11-07 23:04:38.881737"], ["yield", "1 pizza"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:04:38.883221"], ["name", "tomato sauce"], ["updated_at", "2014-11-07 23:04:38.883221"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:04:38.885203"], ["ingredient_id", 69], ["recipe_id", 49], ["updated_at", "2014-11-07 23:04:38.885203"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:04:38.886268"], ["name", "mozzarella"], ["updated_at", "2014-11-07 23:04:38.886268"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:04:38.887716"], ["ingredient_id", 70], ["recipe_id", 49], ["updated_at", "2014-11-07 23:04:38.887716"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 49]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:04:38.892641"], ["description", "TMNT pizza"], ["directions", "place pizza in oven and cook"], ["time", "1.5 hours"], ["title", "Cowabunga Pizza"], ["updated_at", "2014-11-07 23:04:38.892641"], ["yield", "1 pizza"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:04:38.894750"], ["name", "tomato sauce"], ["updated_at", "2014-11-07 23:04:38.894750"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:04:38.897847"], ["ingredient_id", 71], ["recipe_id", 50], ["updated_at", "2014-11-07 23:04:38.897847"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:04:38.899273"], ["name", "mozzarella"], ["updated_at", "2014-11-07 23:04:38.899273"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:04:38.900786"], ["ingredient_id", 72], ["recipe_id", 50], ["updated_at", "2014-11-07 23:04:38.900786"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mIngredient Load (0.2ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 50]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by RecipesController#new as HTML
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 1.5ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:17:08.863302"], ["description", "Healthy quinoa salad for a hippie, fool."], ["directions", "make some quinoa and add some vegetables"], ["time", "45 minutes"], ["title", "Quinoa Salad"], ["updated_at", "2014-11-07 23:17:08.863302"], ["yield", "2 servings"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:17:08.870603"], ["name", "Quinoa"], ["updated_at", "2014-11-07 23:17:08.870603"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:17:08.893188"], ["ingredient_id", 73], ["recipe_id", 51], ["updated_at", "2014-11-07 23:17:08.893188"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:17:08.895337"], ["name", "Kale"], ["updated_at", "2014-11-07 23:17:08.895337"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:17:08.896961"], ["ingredient_id", 74], ["recipe_id", 51], ["updated_at", "2014-11-07 23:17:08.896961"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["created_at", "2014-11-07 23:17:08.898135"], ["description", "Huh"], ["directions", "make quinoa and add some black beans"], ["time", "30 minutes"], ["title", "Quinoa & Black Bean Salad"], ["updated_at", "2014-11-07 23:17:08.898135"], ["yield", "2 servings"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:17:08.900047"], ["ingredient_id", 73], ["recipe_id", 52], ["updated_at", "2014-11-07 23:17:08.900047"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mRecipe Load (0.4ms)[0m  SELECT "recipes".* FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipes"."id" = "recipe_ingredients"."recipe_id" WHERE "recipe_ingredients"."ingredient_id" = $1  [["ingredient_id", 73]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:17:08.909124"], ["description", "TMNT pizza"], ["directions", "place pizza in oven and cook"], ["time", "1.5 hours"], ["title", "Cowabunga Pizza"], ["updated_at", "2014-11-07 23:17:08.909124"], ["yield", "1 pizza"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:17:08.910530"], ["name", "tomato sauce"], ["updated_at", "2014-11-07 23:17:08.910530"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:17:08.912511"], ["ingredient_id", 75], ["recipe_id", 53], ["updated_at", "2014-11-07 23:17:08.912511"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:17:08.913639"], ["name", "mozzarella"], ["updated_at", "2014-11-07 23:17:08.913639"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:17:08.915264"], ["ingredient_id", 76], ["recipe_id", 53], ["updated_at", "2014-11-07 23:17:08.915264"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 53]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:17:08.918771"], ["description", "TMNT pizza"], ["directions", "place pizza in oven and cook"], ["time", "1.5 hours"], ["title", "Cowabunga Pizza"], ["updated_at", "2014-11-07 23:17:08.918771"], ["yield", "1 pizza"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:17:08.920156"], ["name", "tomato sauce"], ["updated_at", "2014-11-07 23:17:08.920156"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:17:08.922163"], ["ingredient_id", 77], ["recipe_id", 54], ["updated_at", "2014-11-07 23:17:08.922163"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:17:08.923326"], ["name", "mozzarella"], ["updated_at", "2014-11-07 23:17:08.923326"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:17:08.924733"], ["ingredient_id", 78], ["recipe_id", 54], ["updated_at", "2014-11-07 23:17:08.924733"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mIngredient Load (0.2ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 54]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by RecipesController#new as HTML
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 1.6ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:19:27.499320"], ["description", "Healthy quinoa salad for a hippie, fool."], ["directions", "make some quinoa and add some vegetables"], ["time", "45 minutes"], ["title", "Quinoa Salad"], ["updated_at", "2014-11-07 23:19:27.499320"], ["yield", "2 servings"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:19:27.506840"], ["name", "Quinoa"], ["updated_at", "2014-11-07 23:19:27.506840"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:19:27.527382"], ["ingredient_id", 79], ["recipe_id", 55], ["updated_at", "2014-11-07 23:19:27.527382"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:19:27.529493"], ["name", "Kale"], ["updated_at", "2014-11-07 23:19:27.529493"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:19:27.531372"], ["ingredient_id", 80], ["recipe_id", 55], ["updated_at", "2014-11-07 23:19:27.531372"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["created_at", "2014-11-07 23:19:27.532826"], ["description", "Huh"], ["directions", "make quinoa and add some black beans"], ["time", "30 minutes"], ["title", "Quinoa & Black Bean Salad"], ["updated_at", "2014-11-07 23:19:27.532826"], ["yield", "2 servings"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:19:27.534917"], ["ingredient_id", 79], ["recipe_id", 56], ["updated_at", "2014-11-07 23:19:27.534917"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mRecipe Load (0.4ms)[0m  SELECT "recipes".* FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipes"."id" = "recipe_ingredients"."recipe_id" WHERE "recipe_ingredients"."ingredient_id" = $1  [["ingredient_id", 79]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:19:27.544986"], ["description", "TMNT pizza"], ["directions", "place pizza in oven and cook"], ["time", "1.5 hours"], ["title", "Cowabunga Pizza"], ["updated_at", "2014-11-07 23:19:27.544986"], ["yield", "1 pizza"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:19:27.546440"], ["name", "tomato sauce"], ["updated_at", "2014-11-07 23:19:27.546440"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:19:27.548374"], ["ingredient_id", 81], ["recipe_id", 57], ["updated_at", "2014-11-07 23:19:27.548374"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:19:27.549440"], ["name", "mozzarella"], ["updated_at", "2014-11-07 23:19:27.549440"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:19:27.551010"], ["ingredient_id", 82], ["recipe_id", 57], ["updated_at", "2014-11-07 23:19:27.551010"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 57]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:19:27.554585"], ["description", "TMNT pizza"], ["directions", "place pizza in oven and cook"], ["time", "1.5 hours"], ["title", "Cowabunga Pizza"], ["updated_at", "2014-11-07 23:19:27.554585"], ["yield", "1 pizza"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:19:27.556053"], ["name", "tomato sauce"], ["updated_at", "2014-11-07 23:19:27.556053"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:19:27.557961"], ["ingredient_id", 83], ["recipe_id", 58], ["updated_at", "2014-11-07 23:19:27.557961"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:19:27.559030"], ["name", "mozzarella"], ["updated_at", "2014-11-07 23:19:27.559030"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:19:27.560410"], ["ingredient_id", 84], ["recipe_id", 58], ["updated_at", "2014-11-07 23:19:27.560410"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mIngredient Load (0.2ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 58]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by RecipesController#new as HTML
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 1.5ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:20:47.476829"], ["description", "Healthy quinoa salad for a hippie, fool."], ["directions", "make some quinoa and add some vegetables"], ["time", "45 minutes"], ["title", "Quinoa Salad"], ["updated_at", "2014-11-07 23:20:47.476829"], ["yield", "2 servings"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:20:47.484176"], ["name", "Quinoa"], ["updated_at", "2014-11-07 23:20:47.484176"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:20:47.505639"], ["ingredient_id", 85], ["recipe_id", 59], ["updated_at", "2014-11-07 23:20:47.505639"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:20:47.507767"], ["name", "Kale"], ["updated_at", "2014-11-07 23:20:47.507767"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:20:47.509529"], ["ingredient_id", 86], ["recipe_id", 59], ["updated_at", "2014-11-07 23:20:47.509529"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["created_at", "2014-11-07 23:20:47.510784"], ["description", "Huh"], ["directions", "make quinoa and add some black beans"], ["time", "30 minutes"], ["title", "Quinoa & Black Bean Salad"], ["updated_at", "2014-11-07 23:20:47.510784"], ["yield", "2 servings"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:20:47.512840"], ["ingredient_id", 85], ["recipe_id", 60], ["updated_at", "2014-11-07 23:20:47.512840"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mRecipe Load (0.4ms)[0m  SELECT "recipes".* FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipes"."id" = "recipe_ingredients"."recipe_id" WHERE "recipe_ingredients"."ingredient_id" = $1  [["ingredient_id", 85]]
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:20:47.523861"], ["description", "TMNT pizza"], ["directions", "place pizza in oven and cook"], ["time", "1.5 hours"], ["title", "Cowabunga Pizza"], ["updated_at", "2014-11-07 23:20:47.523861"], ["yield", "1 pizza"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:20:47.525381"], ["name", "tomato sauce"], ["updated_at", "2014-11-07 23:20:47.525381"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:20:47.527512"], ["ingredient_id", 87], ["recipe_id", 61], ["updated_at", "2014-11-07 23:20:47.527512"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:20:47.528658"], ["name", "mozzarella"], ["updated_at", "2014-11-07 23:20:47.528658"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:20:47.530103"], ["ingredient_id", 88], ["recipe_id", 61], ["updated_at", "2014-11-07 23:20:47.530103"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 61]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:20:47.533699"], ["description", "TMNT pizza"], ["directions", "place pizza in oven and cook"], ["time", "1.5 hours"], ["title", "Cowabunga Pizza"], ["updated_at", "2014-11-07 23:20:47.533699"], ["yield", "1 pizza"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:20:47.535017"], ["name", "tomato sauce"], ["updated_at", "2014-11-07 23:20:47.535017"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:20:47.536945"], ["ingredient_id", 89], ["recipe_id", 62], ["updated_at", "2014-11-07 23:20:47.536945"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:20:47.538020"], ["name", "mozzarella"], ["updated_at", "2014-11-07 23:20:47.538020"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:20:47.539414"], ["ingredient_id", 90], ["recipe_id", 62], ["updated_at", "2014-11-07 23:20:47.539414"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mIngredient Load (0.2ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 62]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by RecipesController#new as HTML
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 1.4ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:21:26.376143"], ["description", "Healthy quinoa salad for a hippie, fool."], ["directions", "make some quinoa and add some vegetables"], ["time", "45 minutes"], ["title", "Quinoa Salad"], ["updated_at", "2014-11-07 23:21:26.376143"], ["yield", "2 servings"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:21:26.386095"], ["name", "Quinoa"], ["updated_at", "2014-11-07 23:21:26.386095"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:21:26.418610"], ["ingredient_id", 91], ["recipe_id", 63], ["updated_at", "2014-11-07 23:21:26.418610"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:21:26.421329"], ["name", "Kale"], ["updated_at", "2014-11-07 23:21:26.421329"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:21:26.424138"], ["ingredient_id", 92], ["recipe_id", 63], ["updated_at", "2014-11-07 23:21:26.424138"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["created_at", "2014-11-07 23:21:26.426018"], ["description", "Huh"], ["directions", "make quinoa and add some black beans"], ["time", "30 minutes"], ["title", "Quinoa & Black Bean Salad"], ["updated_at", "2014-11-07 23:21:26.426018"], ["yield", "2 servings"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:21:26.428193"], ["ingredient_id", 91], ["recipe_id", 64], ["updated_at", "2014-11-07 23:21:26.428193"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mRecipe Load (0.4ms)[0m  SELECT "recipes".* FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipes"."id" = "recipe_ingredients"."recipe_id" WHERE "recipe_ingredients"."ingredient_id" = $1  [["ingredient_id", 91]]
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:21:26.437980"], ["description", "TMNT pizza"], ["directions", "place pizza in oven and cook"], ["time", "1.5 hours"], ["title", "Cowabunga Pizza"], ["updated_at", "2014-11-07 23:21:26.437980"], ["yield", "1 pizza"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:21:26.439615"], ["name", "tomato sauce"], ["updated_at", "2014-11-07 23:21:26.439615"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:21:26.441774"], ["ingredient_id", 93], ["recipe_id", 65], ["updated_at", "2014-11-07 23:21:26.441774"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:21:26.443139"], ["name", "mozzarella"], ["updated_at", "2014-11-07 23:21:26.443139"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:21:26.445029"], ["ingredient_id", 94], ["recipe_id", 65], ["updated_at", "2014-11-07 23:21:26.445029"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 65]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:21:26.452137"], ["description", "TMNT pizza"], ["directions", "place pizza in oven and cook"], ["time", "1.5 hours"], ["title", "Cowabunga Pizza"], ["updated_at", "2014-11-07 23:21:26.452137"], ["yield", "1 pizza"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:21:26.454217"], ["name", "tomato sauce"], ["updated_at", "2014-11-07 23:21:26.454217"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:21:26.456294"], ["ingredient_id", 95], ["recipe_id", 66], ["updated_at", "2014-11-07 23:21:26.456294"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:21:26.457508"], ["name", "mozzarella"], ["updated_at", "2014-11-07 23:21:26.457508"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:21:26.458885"], ["ingredient_id", 96], ["recipe_id", 66], ["updated_at", "2014-11-07 23:21:26.458885"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mIngredient Load (0.2ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 66]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by RecipesController#new as HTML
+Completed 200 OK in 6ms (Views: 1.8ms | ActiveRecord: 2.1ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:22:32.385942"], ["description", "Healthy quinoa salad for a hippie, fool."], ["directions", "make some quinoa and add some vegetables"], ["time", "45 minutes"], ["title", "Quinoa Salad"], ["updated_at", "2014-11-07 23:22:32.385942"], ["yield", "2 servings"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:22:32.396541"], ["name", "Quinoa"], ["updated_at", "2014-11-07 23:22:32.396541"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:22:32.418255"], ["ingredient_id", 97], ["recipe_id", 67], ["updated_at", "2014-11-07 23:22:32.418255"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:22:32.420063"], ["name", "Kale"], ["updated_at", "2014-11-07 23:22:32.420063"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:22:32.421492"], ["ingredient_id", 98], ["recipe_id", 67], ["updated_at", "2014-11-07 23:22:32.421492"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["created_at", "2014-11-07 23:22:32.422628"], ["description", "Huh"], ["directions", "make quinoa and add some black beans"], ["time", "30 minutes"], ["title", "Quinoa & Black Bean Salad"], ["updated_at", "2014-11-07 23:22:32.422628"], ["yield", "2 servings"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:22:32.425767"], ["ingredient_id", 97], ["recipe_id", 68], ["updated_at", "2014-11-07 23:22:32.425767"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mRecipe Load (0.4ms)[0m  SELECT "recipes".* FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipes"."id" = "recipe_ingredients"."recipe_id" WHERE "recipe_ingredients"."ingredient_id" = $1  [["ingredient_id", 97]]
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:22:32.435261"], ["description", "TMNT pizza"], ["directions", "place pizza in oven and cook"], ["time", "1.5 hours"], ["title", "Cowabunga Pizza"], ["updated_at", "2014-11-07 23:22:32.435261"], ["yield", "1 pizza"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:22:32.436819"], ["name", "tomato sauce"], ["updated_at", "2014-11-07 23:22:32.436819"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:22:32.438770"], ["ingredient_id", 99], ["recipe_id", 69], ["updated_at", "2014-11-07 23:22:32.438770"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:22:32.439872"], ["name", "mozzarella"], ["updated_at", "2014-11-07 23:22:32.439872"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:22:32.441437"], ["ingredient_id", 100], ["recipe_id", 69], ["updated_at", "2014-11-07 23:22:32.441437"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 69]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:22:32.444757"], ["description", "TMNT pizza"], ["directions", "place pizza in oven and cook"], ["time", "1.5 hours"], ["title", "Cowabunga Pizza"], ["updated_at", "2014-11-07 23:22:32.444757"], ["yield", "1 pizza"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:22:32.446209"], ["name", "tomato sauce"], ["updated_at", "2014-11-07 23:22:32.446209"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:22:32.448729"], ["ingredient_id", 101], ["recipe_id", 70], ["updated_at", "2014-11-07 23:22:32.448729"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:22:32.450045"], ["name", "mozzarella"], ["updated_at", "2014-11-07 23:22:32.450045"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:22:32.451465"], ["ingredient_id", 102], ["recipe_id", 70], ["updated_at", "2014-11-07 23:22:32.451465"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mIngredient Load (0.2ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 70]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by RecipesController#new as HTML
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 1.5ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:22:59.962332"], ["description", "Healthy quinoa salad for a hippie, fool."], ["directions", "make some quinoa and add some vegetables"], ["time", "45 minutes"], ["title", "Quinoa Salad"], ["updated_at", "2014-11-07 23:22:59.962332"], ["yield", "2 servings"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:22:59.969491"], ["name", "Quinoa"], ["updated_at", "2014-11-07 23:22:59.969491"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:22:59.991199"], ["ingredient_id", 103], ["recipe_id", 71], ["updated_at", "2014-11-07 23:22:59.991199"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:22:59.994607"], ["name", "Kale"], ["updated_at", "2014-11-07 23:22:59.994607"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:22:59.996839"], ["ingredient_id", 104], ["recipe_id", 71], ["updated_at", "2014-11-07 23:22:59.996839"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["created_at", "2014-11-07 23:22:59.998289"], ["description", "Huh"], ["directions", "make quinoa and add some black beans"], ["time", "30 minutes"], ["title", "Quinoa & Black Bean Salad"], ["updated_at", "2014-11-07 23:22:59.998289"], ["yield", "2 servings"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:23:00.000296"], ["ingredient_id", 103], ["recipe_id", 72], ["updated_at", "2014-11-07 23:23:00.000296"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mRecipe Load (0.4ms)[0m  SELECT "recipes".* FROM "recipes" INNER JOIN "recipe_ingredients" ON "recipes"."id" = "recipe_ingredients"."recipe_id" WHERE "recipe_ingredients"."ingredient_id" = $1  [["ingredient_id", 103]]
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:23:00.010219"], ["description", "TMNT pizza"], ["directions", "place pizza in oven and cook"], ["time", "1.5 hours"], ["title", "Cowabunga Pizza"], ["updated_at", "2014-11-07 23:23:00.010219"], ["yield", "1 pizza"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:23:00.011790"], ["name", "tomato sauce"], ["updated_at", "2014-11-07 23:23:00.011790"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:23:00.013747"], ["ingredient_id", 105], ["recipe_id", 73], ["updated_at", "2014-11-07 23:23:00.013747"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:23:00.015267"], ["name", "mozzarella"], ["updated_at", "2014-11-07 23:23:00.015267"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:23:00.017880"], ["ingredient_id", 106], ["recipe_id", 73], ["updated_at", "2014-11-07 23:23:00.017880"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 73]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-07 23:23:00.023142"], ["description", "TMNT pizza"], ["directions", "place pizza in oven and cook"], ["time", "1.5 hours"], ["title", "Cowabunga Pizza"], ["updated_at", "2014-11-07 23:23:00.023142"], ["yield", "1 pizza"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:23:00.025753"], ["name", "tomato sauce"], ["updated_at", "2014-11-07 23:23:00.025753"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:23:00.029219"], ["ingredient_id", 107], ["recipe_id", 74], ["updated_at", "2014-11-07 23:23:00.029219"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-11-07 23:23:00.031192"], ["name", "mozzarella"], ["updated_at", "2014-11-07 23:23:00.031192"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-11-07 23:23:00.033780"], ["ingredient_id", 108], ["recipe_id", 74], ["updated_at", "2014-11-07 23:23:00.033780"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mIngredient Load (0.3ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 74]]
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
