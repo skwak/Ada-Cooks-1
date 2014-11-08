@@ -5145,3 +5145,47 @@ Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 21:48:16 -080
 
 
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 21:48:16 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 21:49:28 -0800
+Processing by HomeController#index as HTML
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 36ms (Views: 35.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-06 21:49:28 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 21:49:28 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 21:49:28 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 21:49:28 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 21:49:28 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-06 21:49:29 -0800
+Processing by HomeController#index as HTML
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT "recipes".* FROM "recipes"
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 59ms (Views: 58.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-06 21:49:29 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-06 21:49:29 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-06 21:49:29 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-06 21:49:29 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-06 21:49:29 -0800
