@@ -1,8 +1,8 @@
 class RecipeForm
   include ActiveModel::Model
 
-  attr_accessor :title, :description, :yield, :time, :directions, :measurement, :recipe
-  # validates :title, :description, :yield, :time, :directions, :measurement, presence: true
+  attr_accessor :title, :description, :yield, :time, :directions, :measurement, :ingredients, :recipe
+  validates :title, :description, :yield, :time, :directions, :measurement, :ingredients, presence: true
 
   def initialize(attributes)
     @attributes = attributes
@@ -12,7 +12,7 @@ class RecipeForm
     return false unless valid?
     # create an instance of Recipe class
     # create recipe ingredients for each id in the ingredients key
-    @recipe = Recipe.create(
+    @recipe = Recipe.new(
       title: @attributes[:title],
       description: @attributes[:description],
       yield: @attributes[:yield],
@@ -22,6 +22,13 @@ class RecipeForm
 
     @attributes[:ingredients].each do |id|
       RecipeIngredient.create(ingredient_id: id, recipe_id: @recipe.id, measurement: @attributes[:measurement])
+    end
+
+    if valid?
+      true
+      @recipe.save!
+    else
+      false
     end
   end
 

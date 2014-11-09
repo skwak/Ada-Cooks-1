@@ -7,14 +7,16 @@ class RecipesController < ApplicationController
   def new
     @ingredients = Ingredient.all
     @recipe = Recipe.new
+    @recipe_form = RecipeForm.new(params[:recipe_form])
   end
 
   def create
+    @ingredients = Ingredient.all
+    @recipe = Recipe.new
     @recipe_form = RecipeForm.new(params[:recipe_form])
     if @recipe_form.submit
       redirect_to recipe_path(@recipe_form.recipe)
     else
-      @recipe = @recipe_form.recipe
       render :new
     end
   end
