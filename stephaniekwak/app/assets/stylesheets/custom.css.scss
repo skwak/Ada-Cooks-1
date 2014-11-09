@@ -1,8 +1,14 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+  font-family: "Times";
+  font-size: 2em;
+}
+
 h1 {
-  font-family: "Palatino"
+  font-family: "Courier New";
+  font-size: 4em;
 }
 
 h1 a:hover {
