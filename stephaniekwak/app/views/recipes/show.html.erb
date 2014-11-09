@@ -1,9 +1,14 @@
 <h2><%= @recipe.title %></h2>
-
 <ul>
-<% @recipe.ingredients.each do |ingredient| %>
-  <li>measurement of <%= ingredient.name %></li>
-<% end %>
-
+  <li>Description: <%= @recipe.description %></li>
+  <li>Yields: <%= @recipe.yield %></li>
+  <li>Time: <%= @recipe.time %></li>
+  <li>Ingredients:
+    <ul>
+      <% @recipe.ingredients.each do |ingredient| %>
+        <li>  <%= find_measurement(ingredient) %> of <%= ingredient.name %></li>
+      <% end %>
+    </ul>
+  <li>Directions: <%= @recipe.directions %></li>
 
 </ul>

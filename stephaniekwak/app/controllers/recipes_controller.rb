@@ -14,7 +14,8 @@ class RecipesController < ApplicationController
     if @recipe_form.submit
       redirect_to recipe_path(@recipe_form.recipe)
     else
-      :new
+      @recipe = @recipe_form.recipe
+      render :new
     end
   end
 
