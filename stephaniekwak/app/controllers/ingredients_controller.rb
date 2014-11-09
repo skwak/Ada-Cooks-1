@@ -21,9 +21,15 @@ class IngredientsController < ApplicationController
     find_ingredient
   end
 
-  def destroy
-    if find_ingredient.delete
-      redirect_to ingredients_path
+  def edit
+    find_ingredient
+  end
+
+  def update
+    if find_ingredient.update
+      redirect_to home_path
+    else
+      render :edit
     end
   end
 
@@ -36,4 +42,5 @@ class IngredientsController < ApplicationController
   def find_ingredient
     @ingredient = Ingredient.find(params[:id])
   end
+
 end
