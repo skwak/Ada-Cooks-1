@@ -33,7 +33,7 @@ class RecipesController < ApplicationController
     if @recipe_form.submit
       redirect_to recipe_path(@recipe_form.recipe)
     else
-      :edit
+      render :edit
     end
   end
 
