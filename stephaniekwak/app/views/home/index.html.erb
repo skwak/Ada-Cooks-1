@@ -1,17 +1,14 @@
-<%= link_to "Add Recipe", new_recipe_path %><br>
-<%= link_to "Add Ingredient", new_ingredient_path %>
+<div class="col-sm-4">
+  <%= link_to "Add Recipe", new_recipe_path %><br>
+  <%= link_to "Add Ingredient", new_ingredient_path %>
+</div>
 
-<h2>All recipes</h2>
-
-<ul>
-<% @recipes.each do |recipe| %>
-  <li><%= link_to recipe.title, recipe_path(recipe) %></li>
-  <li><%= recipe.description %></li>
-  <li><%= recipe.yield %></li>
-  <li><%= recipe.time %></li>
-  <li><%= recipe.directions %></li>
-  <% recipe.ingredients.each do |ingredient| %>
-      <li><%= ingredient.name %></li>
-  <% end %>
-<% end %>
-</ul>
+<div class="col-sm-8">
+  <h2>All recipes</h2>
+  <ul>
+    <% @recipes.each do |recipe| %>
+      <li><%= link_to recipe.title, recipe_path(recipe) %></li>
+      <hr>
+    <% end %>
+  </ul>
+</div>
