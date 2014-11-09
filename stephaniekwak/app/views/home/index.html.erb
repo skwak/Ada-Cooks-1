@@ -1,10 +1,17 @@
 <div class="col-sm-4">
   <%= link_to "Add Recipe", new_recipe_path %><br>
   <%= link_to "Add Ingredient", new_ingredient_path %>
+
+  <h2>All ingredients:</h2>
+  <ul>
+    <% @ingredients.each do |ingredient| %>
+      <li><%= link_to ingredient.name, ingredient_path(ingredient) %></li>
+    <% end %>
+  <ul>
 </div>
 
 <div class="col-sm-8">
-  <h2>All recipes</h2>
+  <h2>All recipes:</h2>
   <ul>
     <% @recipes.each do |recipe| %>
       <li><%= link_to recipe.title, recipe_path(recipe) %></li>
