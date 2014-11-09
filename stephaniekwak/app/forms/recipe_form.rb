@@ -18,27 +18,10 @@ class RecipeForm
     @attributes[:ingredients].each do |id|
       RecipeIngredient.create(ingredient_id: id, recipe_id: @recipe.id, measurement: @attributes[:measurement])
     end
-
-  end
-
-  def update_changes
-    @recipe = Recipe.create(
-      title: @attributes[:title],
-      description: @attributes[:description],
-      yield: @attributes[:yield],
-      time: @attributes[:time],
-      directions: @attributes[:directions],
-    )
-
-    @attributes[:ingredients].each do |id|
-      RecipeIngredient.create(ingredient_id: id, recipe_id: @recipe.id, measurement: @attributes[:measurement])
-    end
   end
 
   def delete_recipe_ingredient
     @recipe.ingredient.delete
   end
-
-
 
 end

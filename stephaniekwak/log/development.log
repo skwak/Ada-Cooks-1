@@ -1,0 +1,136 @@
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-09 13:11:53 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mIngredient Load (0.6ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  [1m[36mRecipe Load (0.5ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 269ms (Views: 228.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 13:11:54 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-09 13:11:54 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 13:11:54 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 13:11:54 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 13:11:54 -0800
+
+
+Started GET "/recipes/24" for 127.0.0.1 at 2014-11-09 13:11:58 -0800
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[35mRecipe Load (0.3ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1  [["id", 24]]
+  [1m[36mIngredient Load (0.5ms)[0m  [1mSELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 24]]
+  [1m[35mRecipeIngredient Load (0.3ms)[0m  SELECT  "recipe_ingredients".* FROM "recipe_ingredients"  WHERE "recipe_ingredients"."ingredient_id" = 5 AND "recipe_ingredients"."recipe_id" = 24 LIMIT 1
+  Rendered recipes/show.html.erb within layouts/application (66.5ms)
+Completed 200 OK in 119ms (Views: 114.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-09 13:11:58 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 13:11:58 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 13:11:58 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 13:11:58 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 13:11:58 -0800
+
+
+Started GET "/recipes/24/edit" for 127.0.0.1 at 2014-11-09 13:12:00 -0800
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 24]]
+  [1m[35mIngredient Load (0.3ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 24]]
+  [1m[36mRecipeIngredient Load (0.2ms)[0m  [1mSELECT  "recipe_ingredients".* FROM "recipe_ingredients"  WHERE "recipe_ingredients"."ingredient_id" = 5 AND "recipe_ingredients"."recipe_id" = 24 LIMIT 1[0m
+  [1m[35mIngredient Load (0.1ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  Rendered recipes/edit.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 70ms (Views: 67.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-09 13:12:00 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 13:12:00 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 13:12:00 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 13:12:00 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 13:12:00 -0800
+
+
+Started PATCH "/recipes/24" for 127.0.0.1 at 2014-11-09 13:12:04 -0800
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3YSIP5FZ/NncjNN18vRWM+1gG5nDtBoEd1dXbzTGFG8=", "recipe_form"=>{"title"=>"coleslaw", "description"=>"cabbagey", "yield"=>"1", "time"=>"1", "ingredients"=>["5"], "measurement"=>"", "directions"=>"awerawrar"}, "commit"=>"Save", "id"=>"24"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "recipes" ("created_at", "description", "directions", "time", "title", "updated_at", "yield") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["created_at", "2014-11-09 21:12:04.934036"], ["description", "cabbagey"], ["directions", "awerawrar"], ["time", "1"], ["title", "coleslaw"], ["updated_at", "2014-11-09 21:12:04.934036"], ["yield", "1"]]
+  [1m[36m (46.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "recipe_ingredients" ("created_at", "ingredient_id", "measurement", "recipe_id", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-11-09 21:12:05.019573"], ["ingredient_id", 5], ["measurement", ""], ["recipe_id", 41], ["updated_at", "2014-11-09 21:12:05.019573"]]
+  [1m[35m (6.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/recipes/41
+Completed 302 Found in 108ms (ActiveRecord: 53.4ms)
+
+
+Started GET "/recipes/41" for 127.0.0.1 at 2014-11-09 13:12:05 -0800
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 41]]
+  [1m[35mIngredient Load (0.3ms)[0m  SELECT "ingredients".* FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1  [["recipe_id", 41]]
+  [1m[36mRecipeIngredient Load (0.2ms)[0m  [1mSELECT  "recipe_ingredients".* FROM "recipe_ingredients"  WHERE "recipe_ingredients"."ingredient_id" = 5 AND "recipe_ingredients"."recipe_id" = 41 LIMIT 1[0m
+  Rendered recipes/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 13:12:05 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-09 13:12:05 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 13:12:05 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 13:12:05 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 13:12:05 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-09 13:12:07 -0800
+Processing by HomeController#index as HTML
+  [1m[35mIngredient Load (0.2ms)[0m  SELECT "ingredients".* FROM "ingredients"
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+  Rendered home/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 65ms (Views: 64.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-09 13:12:07 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-09 13:12:07 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-09 13:12:07 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-09 13:12:07 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-09 13:12:07 -0800
