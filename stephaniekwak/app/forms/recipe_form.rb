@@ -1,4 +1,8 @@
 class RecipeForm
+  include ActiveModel::Model
+
+  attr_accessor :title, :description, :yield, :time, :directions, :measurement
+  validates :title, :description, :yield, :time, :directions, :measurement, presence: true
 
   def initialize(attributes)
     @attributes = attributes
