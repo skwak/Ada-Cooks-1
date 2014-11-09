@@ -8,8 +8,8 @@ Rails.application.routes.draw do
   get "/recipes/:id",                to: "recipes#show",              as: :recipe
   get "/recipes/:id/edit",           to: "recipes#edit",              as: :edit_recipe
   patch "/recipes/:id",              to: "recipes#update",            as: :update_recipe
+  patch "/recipes/:id",              to: "recipes#delete_recipe_ingredient", as: :delete_recipe_ingredient
   delete "/recipes/:id",             to: "recipes#destroy",           as: :delete_recipe
-
 
   get "/ingredients",                to: "ingredients#index",         as: :ingredients
   post "/ingredients",               to: "ingredients#create"

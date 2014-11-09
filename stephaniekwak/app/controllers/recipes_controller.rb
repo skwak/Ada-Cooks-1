@@ -29,12 +29,16 @@ class RecipesController < ApplicationController
   end
 
   def update
-    @recipe_form = RecipeForm.update(params[:recipe_form])
-    if @recipe_form.submit
+    @recipe_form = RecipeForm.new(params[:recipe_form])
+    if @recipe_form.update_changes
       redirect_to recipe_path(@recipe_form.recipe)
     else
       render :edit
     end
+  end
+
+  def delete_recipe_ingredient
+    @recipe_form = RecipeForm.delete_recipe_ingredient
   end
 
   def destroy
