@@ -1,5 +1,5 @@
 class RecipeForm
-
+  
   attr_accessor :title, :recipe
 
   def initialize(attributes)

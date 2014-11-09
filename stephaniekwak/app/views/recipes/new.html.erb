@@ -1,3 +1,41 @@
 <h2>Add New Recipe</h2>
 
-<%= render "form" %>
+<%= form_tag recipes_path do |f| %>
+  <!-- <% if @recipe.errors.any? %>
+    <div class="alert alert-danger" role="alert">
+      <ul class='error-messages'>
+        <% @recipe.errors.each do |column_name, message| %>
+          <li><%= column_name.upcase %> <%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %> -->
+
+  <%= label_tag "Title:" %><br>
+  <%= text_field_tag "recipe_form[title]" %><br>
+
+  <%= label_tag "Description:" %><br>
+  <%= text_area_tag "recipe_form[description]" %><br>
+
+  <%= label_tag "Yields (ex. 1 pizza for 2 people)" %><br>
+  <%= text_field_tag "recipe_form[yield]" %><br>
+
+  <%= label_tag "Time to Cook:" %><br>
+  <%= text_field_tag "recipe_form[time]" %><br>
+
+  <%= label_tag "Ingredients:" %><br>
+  <ul>
+  <% @ingredients.each do |ingredient| %>
+    <li><%= check_box_tag "recipe_form[ingredients][]", ingredient.id, @recipe.ingredients.include?(ingredient) %>
+    <%= label_tag "recipe_form[ingredients][]", ingredient.name %><br>
+    <%= label_tag "Measurement (ex: 1 cup, chopped)" %><br>
+    <%= text_field_tag "recipe_form[measurement]" %></li>
+    <hr>
+  <% end %>
+  </ul>
+
+  <%= label_tag "Directions:" %><br>
+  <%= text_area_tag "recipe_form[directions]" %><br>
+
+  <%= submit_tag "Save", class: "btn btn-primary btn-lg" %>
+<% end %>
