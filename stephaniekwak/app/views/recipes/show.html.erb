@@ -12,3 +12,6 @@
   <li>Directions: <%= @recipe.directions %></li>
 
 </ul>
+
+<%= button_to "Edit Recipe", edit_recipe_path(@recipe), method: :get, class: "btn btn-primary btn-lg" %><br>
+<%= button_to "Delete Recipe", delete_recipe_path(@recipe), method: :delete, class: "btn btn-primary btn-lg" %>

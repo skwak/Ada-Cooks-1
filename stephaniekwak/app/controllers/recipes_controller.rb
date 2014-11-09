@@ -40,7 +40,7 @@ class RecipesController < ApplicationController
   def destroy
     find_recipe
     if @recipe.delete
-      redirect_to recipes_path
+      redirect_to home_path
     end
   end
 
