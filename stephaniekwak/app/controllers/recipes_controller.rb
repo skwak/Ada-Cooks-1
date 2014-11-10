@@ -30,8 +30,8 @@ class RecipesController < ApplicationController
 
   def update
     find_recipe
-    #this doesn't work as it doesn't use the RecipeForm model
-    if @recipe.save
+    #this works for non-ingredients but doesn't use the RecipeForm model
+    if @recipe.update(recipe_params)
       redirect_to recipe_path(@recipe)
     else
       render :edit
@@ -50,5 +50,9 @@ class RecipesController < ApplicationController
 
   def find_recipe
     @recipe = Recipe.find(params[:id])
+  end
+
+  def recipe_params
+    params.require(:recipe).permit(:title, :time, :description, :yield, :directions)
   end
 end
