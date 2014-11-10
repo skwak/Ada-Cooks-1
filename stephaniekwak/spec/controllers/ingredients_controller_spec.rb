@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe RecipesController do
+describe IngredientsController do
 
   subject { "index" }
 
@@ -11,11 +11,10 @@ describe RecipesController do
 
   subject { "new and create" }
 
-  it "should get the new recipe page" do
+  it "should get the new ingredient page" do
     get :new
     expect(response).to render_template(:new)
   end
-
 
 
 end
