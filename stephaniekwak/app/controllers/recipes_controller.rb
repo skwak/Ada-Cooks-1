@@ -25,14 +25,14 @@ class RecipesController < ApplicationController
 
   def edit
     find_recipe
-    @recipe_form = RecipeForm.new(params[:recipe_form])
     @ingredients = Ingredient.all
   end
 
   def update
-    @recipe_form = RecipeForm.new(params[:recipe_form])
-    if @recipe_form.update
-      redirect_to recipe_path(@recipe_form.recipe)
+    find_recipe
+    #this doesn't work as it doesn't use the RecipeForm model
+    if @recipe.save
+      redirect_to recipe_path(@recipe)
     else
       render :edit
     end
